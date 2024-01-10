@@ -1,0 +1,18 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}

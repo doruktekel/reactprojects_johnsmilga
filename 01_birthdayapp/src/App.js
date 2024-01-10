@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import People from "./component/People";
+import data from "./data";
 
 function App() {
+  const [users, setUsers] = useState(data);
+  const removeAll = () => {
+    setUsers([]);
+  };
+  const refreshAll = () => {
+    setUsers(data);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{users.length} Birthdays Today</h1>
+      <People users={users} />
+      <div className="btns">
+        {users.length !== 0 ? (
+          <button onClick={removeAll} className="btn">
+            Remove All
+          </button>
+        ) : (
+          <button onClick={refreshAll} className="btn">
+            Refresh
+          </button>
+        )}
+      </div>
     </div>
   );
 }
