@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.line {
+  margin: 8px;
+  width: 200px;
+  height: 5px;
+  background-color: cornflowerblue;
+  border-radius: 1px;
+}
+.refresh {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: forestgreen;
+  border: 1px solid forestgreen;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.refresh:hover {
+  background-color: forestgreen;
+  color: #fff;
+  cursor: pointer;
+}
