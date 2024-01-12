@@ -1,0 +1,57 @@
+.container {
+  background-color: #fff;
+  width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 8px -8px 2px rgb(61, 152, 255);
+  margin: 10px 0;
+}
+.job {
+  color: dodgerblue;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.chevrons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.chevronbtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.chevron {
+  color: dodgerblue;
+  font-size: 50px;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.chevron:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn:hover {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: dodgerblue;
+  color: #fff;
+}
