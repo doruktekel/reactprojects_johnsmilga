@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  text-transform: capitalize;
+  width: 90%;
+  margin: 50px auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  font-size: 60px;
+}
+.underline {
+  width: 200px;
+  height: 5px;
+  background-color: chocolate;
+  margin: 20px;
+}
