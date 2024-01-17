@@ -1,0 +1,19 @@
+.tabs {
+  margin: 20px 0 20px 0;
+  display: flex;
+  gap: 50px;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background-color: transparent;
+  text-transform: capitalize;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 2px solid blue;
+}
