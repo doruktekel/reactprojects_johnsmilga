@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  margin: 50px auto;
+  text-transform: capitalize;
+  background-color: #f7fbff;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+}
+.underline {
+  width: 200px;
+  height: 4px;
+  background-color: cadetblue;
+  margin: 25px;
+}
+.jobs-center {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.btn-container {
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.job-btn {
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.active-btn {
+  color: cadetblue;
+  border-left: 3px solid cadetblue;
+}
+.job-info {
+  flex-basis: 80%;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+h4 {
+  margin: 15px 0;
+  text-align: center;
+  background-color: lightgray;
+  max-width: 120px;
+  padding: 5px;
+  color: grey;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.job-desc {
+  margin-top: 20px;
+}
+.job-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.job-icon {
+  width: 50px;
+  font-size: 25px;
+  color: cadetblue;
+}
+.btn {
+  padding: 4px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  background-color: cadetblue;
+  color: #fff;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn:hover {
+  background-color: transparent;
+  color: cadetblue;
+  cursor: pointer;
+}
