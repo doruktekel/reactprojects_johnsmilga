@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
-// ATTENTION!!!!!!!!!!
-// I SWITCHED TO PERMANENT DOMAIN
+import "./App.css";
+
 const url = "https://course-api.com/react-tabs-project";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -9,17 +9,22 @@ function App() {
   const [value, setValue] = useState(0);
 
   const fetchJobs = async () => {
-    const reponse = await fetch(url);
-    const newJobs = await reponse.json();
-    setJobs(newJobs);
-    setLoading(false);
+    setLoading(true);
+    try {
+      const reponse = await fetch(url);
+      const newJobs = await reponse.json();
+      setJobs(newJobs);
+      setLoading(false);
+    } catch (error) {
+      console.log("Error", error);
+    }
   };
   useEffect(() => {
     fetchJobs();
   }, []);
   if (loading) {
     return (
-      <section className="section loading">
+      <section className="section">
         <h1>Loading...</h1>
       </section>
     );
@@ -28,11 +33,10 @@ function App() {
   return (
     <section className="section">
       <div className="title">
-        <h2>experience</h2>
+        <h1>experience</h1>
         <div className="underline"></div>
       </div>
       <div className="jobs-center">
-        {/* btn container */}
         <div className="btn-container">
           {jobs.map((item, index) => {
             return (
@@ -46,7 +50,7 @@ function App() {
             );
           })}
         </div>
-        {/* job info */}
+
         <article className="job-info">
           <h3>{title}</h3>
           <h4>{company}</h4>
@@ -54,7 +58,7 @@ function App() {
           {duties.map((duty, index) => {
             return (
               <div key={index} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+                <FaAngleDoubleRight className="job-icon" />
                 <p>{duty}</p>
               </div>
             );
