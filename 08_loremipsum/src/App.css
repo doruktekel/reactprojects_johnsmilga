@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  text-transform: capitalize;
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  gap: 20px;
+}
+form {
+  display: flex;
+  gap: 20px;
+}
+label {
+  font-size: 25px;
+}
+input[type="number"] {
+  width: 60px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid lightblue;
+}
+.btn {
+  padding: 0 6px;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  color: blue;
+  text-transform: capitalize;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn:hover {
+  background-color: transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.paragraph {
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 20px;
+}
