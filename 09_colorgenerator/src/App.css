@@ -1,0 +1,26 @@
+.colors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.input,
+.btn {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid black;
+  outline: none;
+  text-transform: capitalize;
+}
+.error {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid red;
+  outline: none;
+  text-transform: capitalize;
+}
