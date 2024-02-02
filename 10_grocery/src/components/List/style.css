@@ -1,0 +1,15 @@
+.listitem {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+  align-items: center;
+}
+.listitem h3 {
+  font-size: 20px;
+}
+.icons {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  margin: 10px 0;
+}
