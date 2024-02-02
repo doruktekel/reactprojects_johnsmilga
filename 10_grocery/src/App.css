@@ -1,0 +1,43 @@
+.container {
+  width: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+h1 {
+  padding: 10px 0;
+}
+.form {
+  display: flex;
+  gap: 10px;
+}
+.input {
+  padding: 6px 12px;
+  width: 300px;
+  border: none;
+  /* outline: none; */
+  background-color: aliceblue;
+}
+.btn {
+  padding: 6px 12px;
+  color: black;
+  background-color: cornflowerblue;
+  border: 2px solid transparent;
+
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid cornflowerblue;
+  cursor: pointer;
+}
+
+.clear {
+  padding: 6px 12px;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
